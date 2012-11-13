@@ -84,9 +84,9 @@ movecar1 <- function(carcoordinates){
   } else if((carcoordinates[1] == 4) && (carcoordinates[2] == 1)){
     freespot = nextfreeasce(1,1)
   } else if(carcoordinates[1] == 1){
-    freespot = nextfreeasce(1,carcoordinates[2])
+    freespot = nextfreeasce(1,carcoordinates[2]+1)
   } else if(carcoordinates[1] == 4){
-    freespot = nextfreedesc(4,carcoordinates[2])
+    freespot = nextfreedesc(4,carcoordinates[2]-1)
   } else {
     #something is wrong, reset car
     freespot = nextfreeasc(1,1)
@@ -106,13 +106,13 @@ movecar2 <- function(carcoordinates){
   } else if((carcoordinates[1] == 10) && (carcoordinates[2] == 1)){
     freespot = nextfreeasc(1,1)
   } else if(carcoordinates[1] == 1){
-    freespot = nextfreeasc(1, carcoordinates[2])
+    freespot = nextfreeasc(1, carcoordinates[2]+1)
   } else if(carcoordinates[1] == 4){
-    freespot = nextfreedesc(4, carcoordinates[2])
+    freespot = nextfreedesc(4, carcoordinates[2]-1)
   } else if(carcoordinates[1] == 7){
-    freespot = nextfreeasce(7, carcoordinates[2])
+    freespot = nextfreeasce(7, carcoordinates[2]+1)
   } else if(carcoordinates[1] == 10){
-    freespot = nextfreedesc(10, carcoordinates[2])
+    freespot = nextfreedesc(10, carcoordinates[2]-1)
   } else {
     freespot = nextfreeasce(1,1)
   }
@@ -127,9 +127,9 @@ movecar3 <- function(carcoordinates){
   } else if((carcoordinates[1] == 10) && (carcoordinates[2] == 1)){
     freespot = nextfreeasce(7,1)
   } else if(carcoordinates[1] == 7){
-    freespot = nextfreeasce(7,carcoordinates[2])
+    freespot = nextfreeasce(7,carcoordinates[2]+1)
   } else if(carcoordinates[1] == 10){
-    freespot = nextfreedesc(10,carcoordinates[2])
+    freespot = nextfreedesc(10,carcoordinates[2]-1)
   } else {
     freespot = nextfreeasc(7,1)
   }
